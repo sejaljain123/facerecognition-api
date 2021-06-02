@@ -12,9 +12,9 @@ const db = knex({
   client: 'pg',
   connection: {
     host: 'queenie.db.elephantsql.com',
-    user: 'ahhaedkf',
-    password: 'X3g9Z6-tF5CQrHLB3EI_l7CVVGD8JfiA',
-    database: 'ahhaedkf',
+    user: `${process.env.DB_USER}`,
+    password: `${process.env.DB_PASSWORD}`,
+    database: `${process.env.DB_NAME}`,
   },
 });
 
